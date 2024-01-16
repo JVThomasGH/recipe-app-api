@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>manage.py</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "app\\manage.py";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>manage.py</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="python"><span class="hljs-comment">#!/usr/bin/env python</span>
+<span class="hljs-string">"""Django's command-line utility for administrative tasks."""</span>
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">"""Run administrative tasks."""</span>
+    os.environ.setdefault(<span class="hljs-string">'DJANGO_SETTINGS_MODULE'</span>, <span class="hljs-string">'app.settings'</span>)
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">from</span> django.core.management <span class="hljs-keyword">import</span> execute_from_command_line
+    <span class="hljs-keyword">except</span> ImportError <span class="hljs-keyword">as</span> exc:
+        <span class="hljs-keyword">raise</span> ImportError(
+            <span class="hljs-string">"Couldn't import Django. Are you sure it's installed and "</span>
+            <span class="hljs-string">"available on your PYTHONPATH environment variable? Did you "</span>
+            <span class="hljs-string">"forget to activate a virtual environment?"</span>
+        ) <span class="hljs-keyword">from</span> exc
+    execute_from_command_line(sys.argv)
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    main()
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>
